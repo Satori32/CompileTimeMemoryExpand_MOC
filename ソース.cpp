@@ -1,6 +1,8 @@
 #include <iostream>
 #include <array>
 
+//VC Can't compile this.
+
 #define MULTIPLE_X 1.3
 template<class T, std::size_t N>
 constexpr std::array<T, std::size_t(N * MULTIPLE_X)> Expand(const std::array<T,N>& In) {
