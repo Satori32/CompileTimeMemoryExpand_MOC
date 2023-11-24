@@ -18,9 +18,10 @@ int main() {
 	std::array<int, 16> X = { 0, };
 
 	constexpr auto A = Expand(X);
+	constexpr decltype(A) B = {0,};
 
 	for (std::size_t i = 0; i < 3; i++) {
-		static auto B = Expand(B);
+		static decltype(B) B = Expand(B);
 	}
 
 }
